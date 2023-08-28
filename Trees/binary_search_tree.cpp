@@ -35,17 +35,19 @@ int findMin(BstNode* root) {
     root = root->left;
   }
   return root->data;
-
-  // using recursion
-  //  if (root == NULL) {
-  //    cout << "Tree is empty"
-  //         << "\n";
-  //    return 0;
-  //  }
-  //  if(root->left == NULL) {
-  //    return root->data;
-  //  }
-  //  return findMin(root->left);
+  
+/*
+    using recursion
+     if (root == NULL) {
+       cout << "Tree is empty"
+            << "\n";
+       return 0;
+     }
+     if(root->left == NULL) {
+       return root->data;
+     }
+     return findMin(root->left);
+*/
 }
 
 int findMax(BstNode* root) {
