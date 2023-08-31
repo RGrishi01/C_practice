@@ -61,22 +61,27 @@ Node* Insert(Node* root, char data) {
 int main() {
   Node* root = NULL;
 /*
+
           M
 			   / \
-			  B   Q
+			  E   Q
 			 / \   \
-    	A   C   Z
+    	A   G   Z
+         / \
+        F   H
 
 */		
   root = Insert(root, 'M');
-  root = Insert(root, 'B');
+  root = Insert(root, 'E');
   root = Insert(root, 'Q');
   root = Insert(root, 'Z');
   root = Insert(root, 'A');
-  root = Insert(root, 'C');
-  LevelOrder(root); cout << "\n"; 
-  PreOrder(root); cout << "\n";
-  InOrder(root); cout << "\n";
-  PostOrder(root); cout << "\n";
+  root = Insert(root, 'G');
+  root = Insert(root, 'H');
+  root = Insert(root, 'F');
+  cout << "LevelOrderTraversal: "; LevelOrder(root); cout << "\n"; 
+  cout << "PreOrderTraversal:   "; PreOrder(root); cout << "\n";
+  cout << "InOrderTraversal:    "; InOrder(root); cout << "\n";
+  cout << "PostOrderTraversal:  "; PostOrder(root); cout << "\n";
   return 0;
 }
