@@ -55,7 +55,7 @@ int main() {
 // 2D vectors
 int main() {
   vector<vector<int>> vector = {{1, 2, 3, 4}, {4, 5, 6}, {7, 8, 9}};
-  cout << &vector << " " << &vector[0] << " " << &vector[1] << " " << &vector[2] << " " << &vector[3] << "\n";
+  cout << &vector << " " << vector[0][0] << " " << vector[1][0] << " " << vector[2][0] << "\n";
   cout << vector[0].size() << "\n";
   return 0;
 }
